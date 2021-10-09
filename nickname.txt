@@ -1,0 +1,12 @@
+client.on("ready", () => {
+
+    console.log(`${client.user.tag} is ready`);
+
+    function chNickname() {
+        const targetguild = client.guilds.cache.get("SERVER-ID")
+        const me = targetguild.members.cache.get(client.user.id)
+        let name = []
+        for(let i = 0; i < name.length; i++ )
+        me.setNickname(name[i])
+    }; setInterval(chNickname, 10000)
+});
